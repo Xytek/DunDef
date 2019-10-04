@@ -1,0 +1,19 @@
+This is not an absolute list, but just what first came to mind as I was thinking of what to add. It will serve as a reminder and a checklist.
+* A basic dungeon
+* Trap placement 
+- Add a player character
+- Movement and animation 
+- Camera movement (follow)
+- Placement collision for traps (no overlap)
+- Health system
+- Enemies with animations (walk/die)
+- Simple enemy AI, go from A to B
+- Trigger effect on traps (damage and animation)
+- Simple point system (10 = 3 stars)
+- Trigger effect on goal (points loss)
+- Attack system for player
+- Building phase and triggered level start
+- Resource system (gold drops/requirements)
+- UI
+- Multiple levels
+- Music
