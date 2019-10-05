@@ -11,6 +11,10 @@ https://assetstore.unity.com/packages/3d/environments/dungeons/dungeon-traps-506
 For the character models I used:
 https://www.mixamo.com/
 
+
 Useful Youtube videos:
 Trap placement: https://www.youtube.com/watch?v=MbOdWBirf1o
 Movement and camera: https://www.youtube.com/watch?v=NdxMJFPOiwg
+
+The gitignore file is a copy/paste from this thread:
+https://forum.unity.com/threads/git-and-unity-ignore-list-grows-and-grows.538071/
