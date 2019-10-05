@@ -1,9 +1,9 @@
 This is not an absolute list, but just what first came to mind as I was thinking of what to add. It will serve as a reminder and a checklist.
 * A basic dungeon
 * Trap placement 
-- Add a player character
-- Movement and animation 
-- Camera movement (follow)
+* Add a player character
+* Movement and animation 
+* Camera movement (follow)
 - Placement collision for traps (no overlap)
 - Health system
 - Enemies with animations (walk/die)
@@ -17,3 +17,4 @@ This is not an absolute list, but just what first came to mind as I was thinking
 - UI
 - Multiple levels
 - Music
+- Saving
