@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\FPSCam.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Shooting.cs" />
+    <Compile Include="Assets\Scripts\Shuriken.cs" />
     <Compile Include="Assets\Scripts\Target.cs" />
     <Compile Include="Assets\Scripts\TrapPlacementController.cs" />
     <Compile Include="Assets\Scripts\TrapTrigger.cs" />
