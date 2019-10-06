@@ -63,7 +63,10 @@
     <Compile Include="Assets\Scripts\CharacterInput.cs" />
     <Compile Include="Assets\Scripts\FPSCam.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Shooting.cs" />
+    <Compile Include="Assets\Scripts\Target.cs" />
     <Compile Include="Assets\Scripts\TrapPlacementController.cs" />
+    <Compile Include="Assets\Scripts\TrapTrigger.cs" />
     <None Include="Assets\FreeDungeon\freeDungeon_ReadMe.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/OneDrive - NTNU/Unity/DunDef/Dungeon defense/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

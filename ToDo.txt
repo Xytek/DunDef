@@ -4,14 +4,14 @@ This is not an absolute list, but just what first came to mind as I was thinking
 * Add a player character
 * Movement and animation 
 * Camera movement (follow)
+* Health system
+* Attack system for player
+* Trigger effect on traps (damage and animation)
 - Placement collision for traps (no overlap)
-- Health system
 - Enemies with animations (walk/die)
 - Simple enemy AI, go from A to B
-- Trigger effect on traps (damage and animation)
 - Simple point system (10 = 3 stars)
 - Trigger effect on goal (points loss)
-- Attack system for player
 - Building phase and triggered level start
 - Resource system (gold drops/requirements)
 - UI

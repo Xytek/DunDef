@@ -10,7 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 442846}
   - component: {fileID: 11152360}
-  m_Layer: 0
+  - component: {fileID: 3797934609095350078}
+  - component: {fileID: 5261935845423657604}
+  m_Layer: 2
   m_Name: Pf_SpearTrap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,9 +48,34 @@ Animation:
   m_Animations:
   - {fileID: 7400000, guid: 2334a3837fbad4f44b5dc3e249121837, type: 2}
   m_WrapMode: 0
-  m_PlayAutomatically: 1
+  m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!65 &3797934609095350078
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142846}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.5179434, y: 5.620267, z: 3.5287275}
+  m_Center: {x: -0.23243093, y: 2.511683, z: 0.056532145}
+--- !u!114 &5261935845423657604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a929d0e3e6bd0f41ab27d8d14431c9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &142848
 GameObject:
   m_ObjectHideFlags: 0
@@ -60,7 +87,7 @@ GameObject:
   - component: {fileID: 442848}
   - component: {fileID: 3342846}
   - component: {fileID: 2342846}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: SpearLauncher
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -137,7 +164,7 @@ GameObject:
   - component: {fileID: 442850}
   - component: {fileID: 3342848}
   - component: {fileID: 2342848}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Spear
   m_TagString: Untagged
   m_Icon: {fileID: 0}

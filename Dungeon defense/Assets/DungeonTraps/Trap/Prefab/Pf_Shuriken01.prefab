@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 402270}
   - component: {fileID: 11163678}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Pf_Shuriken01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,7 +59,7 @@ GameObject:
   - component: {fileID: 402272}
   - component: {fileID: 3302272}
   - component: {fileID: 2302272}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Shuriken01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
