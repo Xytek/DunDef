@@ -2,17 +2,15 @@
 
 public class Target : MonoBehaviour
 {
-    public float health = 50f;
+    [SerializeField] private float _health = 1000f;
 
     public void TakeDamage(float amount)
     {
-        health -= amount;
-        if (health <= 0f)
-        {
+        _health -= amount;
+        if (_health <= 0f)
             Die();
-        }
     }
-    
+
     void Die()
     {
         Destroy(gameObject);
