@@ -18,3 +18,5 @@ This is not an absolute list, but just what first came to mind as I was thinking
 - Multiple levels
 - Music
 - Saving
+
+Maybe ditch the dungeon style and try Sci-fi instead. Got some decent assets for it now.
