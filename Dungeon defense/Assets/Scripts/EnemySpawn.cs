@@ -15,17 +15,23 @@ public class EnemySpawn : MonoBehaviour
     void Start()
     {
         StartCoroutine(SpawnMobs());
-       
     }
 
 
     private IEnumerator SpawnMobs()
     {
+        // Give the player a few seconds before starting spawns. Can be replaced with a triggered start later
+        yield return new WaitForSeconds(5f);
+        // While there's still enemies left to spawn
         while (_count < _quantity)
         {
             GameObject enemy = Instantiate(_enemy, this.gameObject.transform.position, Quaternion.identity, this.gameObject.transform);
+            Enemy target = enemy.GetComponent<Enemy>();
+            // Reaching the goal is handled in the individual enemy scripts
+            target.goal = _goal;
             _agent = enemy.GetComponent<NavMeshAgent>();
             _agent.SetDestination(_goal.transform.position);
+           
             yield return new WaitForSeconds(_spawnRate);
         }
     }

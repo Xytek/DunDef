@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
         _instance = this;
     }
 
-    public int playerHealth { get; set; } = 100;
+    public int playerHealth { get; set; } = 10;
     public int playerResources { get; set; } = 300;
 
 }

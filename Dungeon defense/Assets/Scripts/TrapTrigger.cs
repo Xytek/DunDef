@@ -9,7 +9,7 @@ public class TrapTrigger : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         GetComponent<Animation>().Play(); //Should play the animation
-        Target target = other.transform.GetComponent<Target>();
+        Enemy target = other.transform.GetComponent<Enemy>();
         if (target)
             target.TakeDamage(_damage);
     }

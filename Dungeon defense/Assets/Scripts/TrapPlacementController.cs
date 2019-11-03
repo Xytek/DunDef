@@ -33,7 +33,6 @@ public class TrapPlacementController : MonoBehaviour
     private void FindSpawn()
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
         if (Physics.Raycast(ray, out _hit))
             // Check if the target is a spawn tile
             _target = (_hit.transform.gameObject.GetComponent<Spawnable>()) ? _hit.transform.gameObject.GetComponent<Spawnable>() : null;
@@ -49,17 +48,20 @@ public class TrapPlacementController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Alpha0 + 1 + i))
             {
                 FindSpawn();                      // Find the target
-                if (_target != null)              // Make sure there is one
+                if (_target != null)              // Make sure there is a target
                     if (KeyPressedAgain(i))       // Press a key once for preview, then again to exit
                     {
                         _target.DestroyTrap();
                         _tempTrapIndex = -1;
                         _uiManager.TurnOffSpawnTooltip();
-                    }
+                    } 
                     else
                     {
-                        if (_tempTrap != null)   // If you're changing target without having bought the previous one
+                        if (_tempTrap != null)
+                        {  // If you're changing target without having bought the previous one
                             _target.DestroyTrap();
+                            Destroy(_tempTrap);
+                        }
 
                         if (_target.HasTrap()) // Prepare to sell the trap if there already exists one
                         {
