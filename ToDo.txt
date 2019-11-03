@@ -1,4 +1,7 @@
 This is not an absolute list, but just what first came to mind as I was thinking of what to add. It will serve as a reminder and a checklist.
+* = done
+- = to do
+
 * A basic dungeon
 * Trap placement 
 * Add a player character
@@ -7,16 +10,13 @@ This is not an absolute list, but just what first came to mind as I was thinking
 * Health system
 * Attack system for player
 * Trigger effect on traps (damage and animation)
-- Placement collision for traps (no overlap)
-- Enemies with animations (walk/die)
-- Simple enemy AI, go from A to B
-- Simple point system (10 = 3 stars)
-- Trigger effect on goal (points loss)
-- Building phase and triggered level start
-- Resource system (gold drops/requirements)
-- UI
+* Placement collision for traps (no overlap)
+* Enemies with animations
+* Simple enemy AI, go from A to B
+* Trigger effect on goal (points loss)
+* Resource system
+* UI
+- Coin drops
 - Multiple levels
 - Music
 - Saving
-
-Maybe ditch the dungeon style and try Sci-fi instead. Got some decent assets for it now.
