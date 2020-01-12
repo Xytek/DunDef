@@ -16,12 +16,15 @@ public class FPSCam : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float horizontal = Input.GetAxis("Mouse X");
-        float vertical = Input.GetAxis("Mouse Y");
-        Vector2 look = new Vector2(horizontal, vertical);
-        _mouseLook += look * _sensitivity;
-        _mouseLook.y = Mathf.Clamp(_mouseLook.y, -80f, 80);
-        transform.localRotation = Quaternion.AngleAxis(-_mouseLook.y, Vector3.right);
-        _character.transform.localRotation = Quaternion.AngleAxis(_mouseLook.x, _character.transform.up);
+        if (!GetComponentInParent<PlayerController>().Paused)
+        {
+            float horizontal = Input.GetAxis("Mouse X");
+            float vertical = Input.GetAxis("Mouse Y");
+            Vector2 look = new Vector2(horizontal, vertical);
+            _mouseLook += look * _sensitivity;
+            _mouseLook.y = Mathf.Clamp(_mouseLook.y, -80f, 80);
+            transform.localRotation = Quaternion.AngleAxis(-_mouseLook.y, Vector3.right);
+            _character.transform.localRotation = Quaternion.AngleAxis(_mouseLook.x, _character.transform.up);
+        }
     }
 }

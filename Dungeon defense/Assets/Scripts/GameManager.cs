@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
         get
         {
             if (_instance == null)
-                Debug.LogError("GameManager is null!");
+                return null;
             return _instance;
         }
     }
@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
         _instance = this;
     }
 
-    public int playerHealth { get; set; } = 10;
-    public int playerResources { get; set; } = 300;
-
+    public int playerHealth  = 1;
+    public int playerResources = 300;
+    [RangeAttribute(0, 3)] public List<int> playerStars = new List<int>();
 }

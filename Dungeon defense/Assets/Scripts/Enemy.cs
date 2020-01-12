@@ -5,7 +5,7 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] private float _maxHealth = 1000f;
     private float _health = 0f;
-    [SerializeField] private Slider _healthbar;
+    [SerializeField] private Slider _healthbar = default;
     public GameObject goal { get; set; }
     private void Start()
     {
@@ -28,7 +28,10 @@ public class Enemy : MonoBehaviour
         _health += amount;
         _healthbar.value = _health;
         if (_health >= _maxHealth)
+        {
+            GameManager.Instance.playerResources += 10;
             Die();
+        }
     }
 
     void Die()
